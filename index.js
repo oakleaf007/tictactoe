@@ -36,7 +36,7 @@ const combinations=[
     ];
 
 function winner(){
-    combinations.forEach(i=>{
+    for(let i of combinations){
         let[a,b,c] = i;
 
 
@@ -51,11 +51,13 @@ function winner(){
             },200);
             return;
         }
-    });
 
-    if([...box].every(b=>b.textContent !=="")){
+
+    }
+   if([...box].every(b=>b.textContent !=="")){
         setTimeout(()=>alert("Draw!"),500);
     }
+ 
 }
 
 function popupWinner(a,b,c){
