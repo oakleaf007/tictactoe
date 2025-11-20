@@ -65,7 +65,7 @@ function popupWinner(a,b,c){
 }
 
 function disableAll(){
-    box.forEach(b=> b.style.pointerEvent =  "none");
+    box.forEach(b=> b.style.pointerEvents =  "none");
 }
 
 reset.forEach((r)=>{
