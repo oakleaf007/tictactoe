@@ -6,7 +6,7 @@
 }
 
 main{
-    height: calc(100vh - 60px);
+    height:100vh;
     /* background-color: 	#5080a1; */
     background-image: 	url("./icons/66998.jpg");
     background-size: 100%;
@@ -17,9 +17,13 @@ main{
 }
 
 header{
+    z-index: 1000;;
     background-color: #121212;
     height: 60px;
     display: flex;
+    position: fixed;
+    
+    width: 100%;
     place-items: center;
     justify-content: space-between;
     
