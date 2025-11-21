@@ -24,7 +24,9 @@ box.forEach((e)=>
        
     
     );
-
+function about(){
+    window.open("https://github.com/OakLeaf007/tictactoe", "_blank0");
+}
 
 const banner = document.getElementById("banner");
 const reset = document.querySelectorAll(".reset");
