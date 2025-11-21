@@ -7,7 +7,7 @@
 
 main{
     height:100vh;
-    /* background-color: 	#5080a1; */
+    background-color: 	#333;
     background-image: 	url("./icons/66998.jpg");
     background-size: 100%;
     display: flex;
