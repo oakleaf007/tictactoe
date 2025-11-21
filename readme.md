@@ -1,7 +1,7 @@
 # 🎮 Tic Tac Toe Game (JavaScript)
 
-> A clean and modern **Tic-Tac-Toe game** built with **HTML, CSS, and JavaScript**.  
-> Features turn indicator, win detection, draw check, and restart logic.
+A clean and modern **Tic-Tac-Toe game** built with **HTML, CSS, and JavaScript**.  
+Features turn indicator, win detection, draw check, and restart logic.
 
 ---
 
