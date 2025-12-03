@@ -27,9 +27,12 @@ box.forEach((e)=>
 function about(){
     window.open("https://github.com/OakLeaf007/tictactoe", "_blank0");
 }
-
+const xscore = document.querySelector(".score-x");
+const oscore = document.querySelector(".score-o");
+let scorex=0;
+let scoreo=0;
 const banner = document.getElementById("banner");
-const reset = document.querySelectorAll(".reset");
+const reset = document.querySelector(".reset");
 const winnerName = document.getElementById("winner");
 const quack = new Audio("quack.mp3");
 const combinations=[
@@ -46,11 +49,20 @@ function winner(){
          box[a].textContent === box[b].textContent &&
         box[b].textContent === box[c].textContent){
             popupWinner(a,b,c);
+            
             disableAll();
             setTimeout(()=>{
                 banner.style.display="block";
                 winnerName.textContent= box[a].textContent + " Wins";
-                
+                if(box[a].textContent=="X") 
+                    {   scorex+=1;
+                        xscore.textContent=scorex;
+                       
+                    } else{
+                        scoreo+=1;
+                        oscore.textContent=scoreo;
+                    }
+
                 quack.play();
             },100);
             return;
@@ -78,12 +90,18 @@ function disableAll(){
     box.forEach(b=> b.style.pointerEvents =  "none");
 }
 
-reset.forEach((r)=>{
-    r.addEventListener("click",()=>{
+reset.addEventListener("click",()=>{
         resetAll();
 
-    })
+    });
+const resetScore = document.querySelector(".reset-score");
+
+resetScore.addEventListener("click",()=>{
+    xscore.textContent=0;
+    oscore.textContent=0;
+
 })
+
 function resetAll(){
     box.forEach(b=>{
         b.style.pointerEvents="auto";

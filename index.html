@@ -12,9 +12,17 @@
 <body>
  <header>
             <div id="logo">Tic-Tack-Quack</div>
+            
             <div id="about"><button onclick="about()">About us</button></div>
         </header>
     <main>
+        <div class="score-card">
+                <div >X : <span class="score-x">X</span>
+                </div>
+                <div>O : <span class="score-o">O</span>
+                </div>
+               
+            </div>
        <div id="players"><span id="player">X</span>'s turn</div>
     <div id="banner"><span id="winner">X</span>
     <div id="btn"><button class="reset">Reset</button></div></div>
@@ -35,7 +43,7 @@
 
 
     </div>
-    <div id="btn"><button class="reset">Reset</button></div>
+    <div id="btn"><button class="reset-score">Reset Score</button></div>
     </main>
     <script src="index.js"></script>
 </body>
